@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styelePortifolio.css">
     <title>Portifolio</title>
 </head>
+
 <body>
     <header>
         <ul class="nav ">
-            <li><h1>Caio Vale</h1></li>
+            <li>
+                <h1>Caio Vale</h1>
+            </li><!--titulo-->
         </ul>
         <ul class="nav">
             <li></li>
             <li><a href="#">Quem Sou Eu</a></li>
-            <li><a href="#portifolio">Portifolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <!--<li><a href="#">Contatos</a></li>-->
         </ul>
     </header>
-    <div class="box">
+    <main class="box">
         <iframe src="planoDeFundo.html" class="item1" frameborder="0"></iframe>
-        
+
 
         <div class="item3">
             <div id="texto1">
-                <h1>Olá, meu nome é <span class="nome1">Caio</span></h1>
-                <p>Sou <span class="nome2">desenvolvedor web (Front-End)</span>, iniciei meus estudos na programação por volta de 2020 e desde então criei alguns projetos e desenvolvi alguns prototipos front-end, mas estou me aperfeiçoando para ingressar no Back-End.</p>
+                <h1 id="apresentacao1">Olá, meu nome é <span class="nome1">Caio</span></h1>
+                <p id="apresentacao2">Sou <span class="nome2">desenvolvedor web (Front-End)</span>, iniciei meus estudos na programação por volta de 2020 e desde então desenvolvi alguns prototipos e projetos, estou me aperfeiçoando para ingressar no Back-End.</p>
             </div>
             <div>
-                <img src="image/caio.png" alt="Eu">
+                <img src="image/caio.png" alt="Eu" class="foto"><!--imagem/FOTO-->
             </div>
             <div id="circle"></div>
         </div>
         <div class="item4" id="quarto">
-            <h2 class="projetos" id="portifolio"> Portifolio</h2>
-           <div class="cardes">
-            <div class="card">
-                <a href="https://caio-vale.github.io/Caio-Vale/dashboard.html" target="_blank"><img src="image/PrototipoDashboard.JPG" alt="Projeto1" class="cardImg"></a>
-                <div class="container">
-                  <h4><b>Dashboard</b></h4> 
-                  <p>Prototipo de uma aplicação web para delivery. </p> 
+            <h2 class="projetos" id="portfolio"> Portfólio</h2>
+            <div class="cardes">
+                <div class="card">
+                    <a href="https://caio-vale.github.io/Caio-Vale/dashboard.html" target="_blank"><img
+                            src="image/PrototipoDashboard.JPG" alt="Projeto1" class="cardImg"></a>
+                    <div class="container">
+                        <h4><b>Dashboard</b></h4>
+                        <p>Prototipo de uma aplicação web para delivery. </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <a href="https://caio-vale.github.io/flashfood/" target="_blank"><img src="image/DeliverySimplificado.JPG" alt="Projeto2" class="cardImg"></a>
-                <div class="container">
-                  <h4><b>Delivery</b></h4> 
-                  <p>Aplicação web simples para delivery.</p> 
+                <div class="card">
+                    <a href="https://caio-vale.github.io/flashfood/" target="_blank"><img
+                            src="image/DeliverySimplificado.JPG" alt="Projeto2" class="cardImg"></a>
+                    <div class="container">
+                        <h4><b>Delivery</b></h4>
+                        <p>Aplicação web simples para delivery.</p>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
         <!--<div class="item5">-->
         </div>
-    </div>
-    
+    </main>
+
 </body>
+
 </html>
