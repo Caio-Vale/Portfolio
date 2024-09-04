@@ -51,8 +51,9 @@ header {
 
 .item1 {
     width: 100%;
-    height: 1900px;
+    height: 2700px;
     position: absolute;
+    top: -70px;
     z-index: 0;
 }
 
@@ -112,11 +113,20 @@ header {
     position: relative;
     left: 70%;
     border-radius: 50%;
+    z-index: -2;
+}
+
+.fotoFrent{
+    width: 35%;
+    height: 80%;
+    position: absolute;
+    left: 53%;
+    border-radius: 50%;
 }
 
 #circle {
     border-radius: 50%;
-    background: radial-gradient(rgb(34, 39, 56)65%, rgb(190, 255, 255));
+    background: radial-gradient(rgba(34, 39, 56, 0)65%, rgb(190, 255, 255));
     opacity: 0%;
     width: 450px;
     height: 460px;
@@ -129,9 +139,100 @@ header {
 
 .item3:hover #circle {
     box-shadow: 0px 0px 20px rgb(170, 255, 255);
-    background: radial-gradient(rgb(34, 39, 56)65%, rgb(190, 255, 255));
+    background: radial-gradient(rgba(34, 39, 56, 0)65%, rgb(190, 255, 255));
     opacity: 100%;
     transition: 1s;
+}
+
+.conteudoExp {
+    display: flex;
+    gap: 500px;
+}
+
+.cursos {
+    font-size: 2em;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-evenly;
+    background-color: rgb(34, 39, 56);
+    border: 10px solid rgb(34, 39, 56);
+    border-radius: 32px;
+    box-shadow: 10px 10px 40px black;
+    height: 800px;
+    width: 80%;
+    position: absolute;
+    top: 106%;
+    left: 10%;
+    z-index: 2;
+    color: white;
+}
+
+#conhecimento {
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 2.5em;
+}
+
+.barras {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    height: 600px;
+    /*background-color: rgba(216, 213, 208, 0.048);*/
+    font-size: 30px;
+}
+
+.barraDeRolagem {
+    margin-bottom: 25px;
+    position: relative;
+    width: 400px;
+    height: 4px;
+    background-color: rgba(112, 112, 112, 0.76);
+}
+
+.barraDeRolagem::before {
+    content: '';
+    position: absolute;
+    width: 1%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.76);
+    transition: 3s;
+}
+
+.experiencia:hover #html::before{
+    width: 98%;
+    transition: 2s;
+}
+
+.experiencia:hover #css::before{
+    width: 93%;
+    transition: 2s;
+}
+
+.experiencia:hover #javascript::before{
+    width: 78%;
+    transition: 2s;
+}
+
+.experiencia:hover #github::before{
+    width: 87%;
+    transition: 2s;
+}
+
+.experiencia:hover #typescript::before{
+    width: 5%;
+    transition: 2s;
+}
+
+.experiencia:hover #react::before{
+    width: 5%;
+    transition: 2s;
 }
 
 .item4 {
@@ -147,12 +248,14 @@ header {
     height: 650px;
     width: 80%;
     position: absolute;
-    top: 115%;
+    top: 200%;
     left: 10%;
     z-index: 3;
 }
 
-.projetos {
+
+
+.portfolio {
     position: relative;
     top: 40px;
     color: white;
@@ -222,6 +325,17 @@ header {
     z-index: 4;
 }
 
+footer {
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    z-index: 5;
+    top: 2550px;
+    font-size: 2em;
+    color: white;
+}
+
 @media screen and (max-width:600px) and (min-width:500px){ 
 
     
@@ -262,9 +376,18 @@ header {
         border-radius: 40%;
     }
 
+    .fotoFrent{
+        width: 310px;
+        height: 400px;
+        position: absolute;
+        left: 15%;
+        top: 18%;
+        border-radius: 50%;
+    }
+
     #circle {
         border-radius: 50%;
-        background: radial-gradient(rgb(34, 39, 56)65%, rgb(190, 255, 255));
+        background: radial-gradient(rgba(34, 39, 56, 0)65%, rgb(190, 255, 255));
         opacity: 0%;
         width: 350px;
         height: 350px;
@@ -279,7 +402,7 @@ header {
 
     .item3:hover #circle {
         box-shadow: 0px 0px 20px rgb(170, 255, 255);
-        background: radial-gradient(rgb(34, 39, 56)65%, rgb(190, 255, 255));
+        background: radial-gradient(rgba(34, 39, 56, 0)65%, rgb(190, 255, 255));
         opacity: 100%;
         transition: 1s;
     }
@@ -357,22 +480,21 @@ header {
 
     .item3 {
         height: 800px;
-        width: 95%;
+        width: 98%;
         top: 8%;
-        left: 2%;
+        left: 1%;
     }
 
     #apresentacao1 {
         position: relative;
-        top: -25%;
+        top: -40%;
         left: -30%;
         width: 220px;
     }
 
     #apresentacao2 {
-        position: relative;
-        top: 30%;
-        left: -10px;
+        position: absolute;
+        top: 75%;
         width: 340px;
     }
 
@@ -385,9 +507,18 @@ header {
         border-radius: 40%;
     }
 
+    .fotoFrent{
+        width: 310px;
+        height: 400px;
+        position: absolute;
+        left: 15%;
+        top: 18%;
+        border-radius: 50%;
+    }
+
     #circle {
         border-radius: 50%;
-        background: radial-gradient(rgb(34, 39, 56)65%, rgb(190, 255, 255));
+        background: radial-gradient(rgba(34, 39, 56, 0)65%, rgb(190, 255, 255));
         opacity: 0%;
         width: 350px;
         height: 350px;
@@ -402,7 +533,7 @@ header {
 
     .item3:hover #circle {
         box-shadow: 0px 0px 20px rgb(170, 255, 255);
-        background: radial-gradient(rgb(34, 39, 56)65%, rgb(190, 255, 255));
+        background: radial-gradient(rgb(34, 39, 56,0)65%, rgb(190, 255, 255));
         opacity: 100%;
         transition: 1s;
     }
