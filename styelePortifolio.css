@@ -43,7 +43,10 @@ header {
     transition: 0.5s;
 }
 
-
+.nav>li>a:visited {
+    position: relative;
+    top: 50px;
+}
 
 /*.box {
     border: 2px solid rgb(255, 0, 0);
@@ -145,6 +148,8 @@ header {
 }
 
 .conteudoExp {
+    position: relative;
+    top: 150px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -267,6 +272,17 @@ header {
     top: 200%;
     left: 10%;
     z-index: 3;
+}
+
+#portfolTela {
+    font-size: 0.01px;
+}
+
+#experTela {
+    font-size: 0.01px;
+    top: 690px;
+    position: relative;
+    z-index: 10;
 }
 
 .portfolio {
