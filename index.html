@@ -5,53 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styelePortifolio.css">
-    <title>Portifolio</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
     <header>
-        <ul class="nav ">
-            <li>
-                <h1>Caio Vale</h1>
-            </li><!--titulo-->
-        </ul>
         <ul class="nav">
+            <li>
+                <h1>Caio Vale</h1> <!--titulo-->
+            </li>
+        </ul>
+        <ul class="nav"><!--area de navegação-->
             <li></li>
-            <li><a href="#">Quem Sou Eu</a></li>
+            <li><a href="#">Sobre</a></li>
             <li><a href="#experTela">Conhecimentos</a></li>
             <li><a href="#portfolTela">Portfolio</a></li>
             <li><a href="#footer">Contato</a></li>
-            <!--<li><a href="#">Contatos</a></li>-->
         </ul>
     </header>
+    <!--PLANO DE FUNDO-->
+    <iframe src="planoDeFundo.html" class="planoDeFundo" frameborder="0" scrolling="no"></iframe>
     <main class="box">
-        <iframe src="planoDeFundo.html" class="item1" frameborder="0"></iframe>
-
-
-        <div class="item3">
-            <div id="texto1">
-                <h1 id="apresentacao1">Olá, meu nome é <span class="nome1">Caio</span></h1>
-                <p id="apresentacao2">Sou <span class="nome2">desenvolvedor web (Front-End)</span>, iniciei meus estudos
+        <!--1º BANNER - PERFIL-->
+        <div class="bannerQuemSouEu">
+            <div id="apreInicial">
+                <h1 id="apre1">Olá, meu nome é <span class="meuNome">Caio</span></h1>
+                <img src="image/caio.png" alt="Foto de perfil" class="fotoCaioExtra"><!--imagem/FOTO-->
+                <p id="apre2">Sou <span class="dev">desenvolvedor web (Front-End)</span>, iniciei meus estudos
                     na programação por volta de 2020 e desde então desenvolvi alguns prototipos e projetos, estou me
-                    aperfeiçoando para ingressar no Back-End.</p>
+                    aperfeiçoando para ser um desenvolvedor Full Stack.</p>
             </div>
             <div>
-                <img src="image/caio.png" alt="Eu" class="foto"><!--imagem/FOTO-->
+                <img src="image/caio.png" alt="Foto de perfil" class="fotoCaio"><!--imagem/FOTO-->
             </div>
-            <div id="circle"></div>
-            <div>
-                <!--<img src="image/caio-2.png" alt="Eu" class="fotoFrent"> imagem/FOTO-->
-            </div>
-            <div id="experTela">
-                <p>tela</p>
-            </div>
+            <!--Link da navegação-->
+            <p id="experTela">.</p>
         </div>
-        
-
-        <div class="experiencia" id="experiencia">
-            <h2 id="conhecimento">Conhecimentos e Cursos</h2>
-            <div class="conteudoExp">
-                <div class="barras">
+        <!--2º BANNER - CURSOS-->
+        <div class="bannerXp" id="experiencia">
+            <h2 class="titulo" id="conhecimento">Conhecimentos</h2>
+            <div class="containerXp">
+                <div class="nivel">
                     <div>HTML</div>
                     <div class="barraDeRolagem" id="html"></div>
                     <div>CSS</div>
@@ -66,7 +60,7 @@
                     <div class="barraDeRolagem" id="react"></div> -->
                 </div>
                 <div class="cursos">
-                    <h4>Cursos</h4>
+                    <!--<h4 id="titleCurso">Cursos</h4>-->
                     <h5>Curso FullStack - Digital Collage</h5>
                     <p>Presencial</p>
                     <hr>
@@ -76,17 +70,17 @@
                     <hr>
                 </div>
             </div>
-            <div id="portfolTela">
-                <p>tela3</p>
+            <div id="portfolTela"><!--Link da navegação-->
+                <p>.</p>
             </div>
 
         </div>
-        
-        <div class="item4" id="quarto">
-            <h2 class="portfolio" id="portfolio"> Portfólios</h2>
+        <!--3º BANNER - PORTFOLIOS-->
+        <div class="bannerPrototipos">
+            <h2 class="titulo"> Portfólios</h2>
             <div class="cardes"><!--area de demonstração de trabalhos-->
                 <div class="card">
-                    <a href="https://caio-vale.github.io/Caio-Vale/dashboard.html" target="_blank"><img
+                    <a href="https://caio-vale.github.io/Caio-Vale/dashboard.html" target="_blank" class="acesso"><img
                             src="image/PrototipoDashboard.JPG" alt="Projeto1" class="cardImg"></a>
                     <div class="container">
                         <h4><b>Dashboard</b></h4>
@@ -104,11 +98,16 @@
             </div>
         </div>
     </main>
+    <!--RODA PÉ-->
     <footer id="footer">
-        <h3>Contato</h3>
+        <h3 class="titulo">Contato</h3>
         <div class="footerLinks">
             <div>
-                <a href="https://github.com/Caio-Vale" target="_blank"  id="ico"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="-2 -2 24 24"><path fill="currentColor" d="M18.88 1.099Q17.78-.001 16.233 0H3.746Q2.198 0 1.099 1.099Q-.001 2.199 0 3.746v12.487q0 1.548 1.099 2.647q1.1 1.1 2.647 1.099H6.66q.285 0 .429-.02a.5.5 0 0 0 .286-.169q.143-.15.143-.435l-.007-.885q-.006-.846-.006-1.34l-.3.052q-.285.052-.721.046a5.6 5.6 0 0 1-.904-.091a2 2 0 0 1-.872-.39a1.65 1.65 0 0 1-.572-.8l-.13-.3a3.3 3.3 0 0 0-.41-.663q-.28-.364-.566-.494l-.09-.065a1 1 0 0 1-.17-.156a.7.7 0 0 1-.117-.182q-.039-.092.065-.15q.104-.06.378-.059l.26.04q.26.051.643.311a2.1 2.1 0 0 1 .631.677q.3.532.722.813q.423.28.852.28t.742-.065a2.6 2.6 0 0 0 .585-.196q.117-.871.637-1.34a9 9 0 0 1-1.333-.234a5.3 5.3 0 0 1-1.223-.507a3.5 3.5 0 0 1-1.047-.872q-.416-.52-.683-1.365q-.266-.846-.266-1.952q0-1.573 1.027-2.68q-.48-1.183.091-2.652q.378-.118 1.119.175t1.086.5q.345.21.553.352a9.2 9.2 0 0 1 2.497-.338q1.288 0 2.498.338l.494-.312a7 7 0 0 1 1.197-.572q.689-.26 1.054-.143q.585 1.47.103 2.653q1.028 1.105 1.028 2.68q0 1.106-.267 1.957q-.266.852-.689 1.366a3.7 3.7 0 0 1-1.053.865q-.63.351-1.223.507a9 9 0 0 1-1.333.235q.675.585.676 1.846v3.11q0 .22.065.357a.36.36 0 0 0 .208.189q.143.052.254.064q.111.014.318.013h2.914q1.548 0 2.647-1.099t1.099-2.647V3.746q0-1.548-1.1-2.647z"/></svg></a>
+                <a href="https://github.com/Caio-Vale" target="_blank" id="ico"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="4em" height="4em" viewBox="-2 -2 24 24">
+                        <path fill="currentColor"
+                            d="M18.88 1.099Q17.78-.001 16.233 0H3.746Q2.198 0 1.099 1.099Q-.001 2.199 0 3.746v12.487q0 1.548 1.099 2.647q1.1 1.1 2.647 1.099H6.66q.285 0 .429-.02a.5.5 0 0 0 .286-.169q.143-.15.143-.435l-.007-.885q-.006-.846-.006-1.34l-.3.052q-.285.052-.721.046a5.6 5.6 0 0 1-.904-.091a2 2 0 0 1-.872-.39a1.65 1.65 0 0 1-.572-.8l-.13-.3a3.3 3.3 0 0 0-.41-.663q-.28-.364-.566-.494l-.09-.065a1 1 0 0 1-.17-.156a.7.7 0 0 1-.117-.182q-.039-.092.065-.15q.104-.06.378-.059l.26.04q.26.051.643.311a2.1 2.1 0 0 1 .631.677q.3.532.722.813q.423.28.852.28t.742-.065a2.6 2.6 0 0 0 .585-.196q.117-.871.637-1.34a9 9 0 0 1-1.333-.234a5.3 5.3 0 0 1-1.223-.507a3.5 3.5 0 0 1-1.047-.872q-.416-.52-.683-1.365q-.266-.846-.266-1.952q0-1.573 1.027-2.68q-.48-1.183.091-2.652q.378-.118 1.119.175t1.086.5q.345.21.553.352a9.2 9.2 0 0 1 2.497-.338q1.288 0 2.498.338l.494-.312a7 7 0 0 1 1.197-.572q.689-.26 1.054-.143q.585 1.47.103 2.653q1.028 1.105 1.028 2.68q0 1.106-.267 1.957q-.266.852-.689 1.366a3.7 3.7 0 0 1-1.053.865q-.63.351-1.223.507a9 9 0 0 1-1.333.235q.675.585.676 1.846v3.11q0 .22.065.357a.36.36 0 0 0 .208.189q.143.052.254.064q.111.014.318.013h2.914q1.548 0 2.647-1.099t1.099-2.647V3.746q0-1.548-1.1-2.647z" />
+                    </svg></a>
             </div>
             <!-- <div>
                 <a href="" target="_blank" id="ico"><svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 128 128"><path fill="currentColor" d="M116 3H12a8.91 8.91 0 0 0-9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81V11.77A8.93 8.93 0 0 0 116 3M39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1 1 10.49-10.5a10.5 10.5 0 0 1-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"/></svg></a>
