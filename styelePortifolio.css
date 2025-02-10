@@ -182,22 +182,27 @@ header {
 }
 
 .bannerXp:hover #javascript::before {
-    width: 78%;
+    width: 90%;
     transition: 2s;
 }
 
 .bannerXp:hover #github::before {
-    width: 87%;
+    width: 95%;
     transition: 2s;
 }
 
-.bannerXp:hover #typescript::before {
-    width: 5%;
+.bannerXp:hover #tailwind::before {
+    width: 85%;
+    transition: 2s;
+}
+
+.bannerXp:hover #bootstrap::before {
+    width: 80%;
     transition: 2s;
 }
 
 .bannerXp:hover #react::before {
-    width: 5%;
+    width: 70%;
     transition: 2s;
 }
 
