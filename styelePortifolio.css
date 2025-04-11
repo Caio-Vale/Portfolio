@@ -400,6 +400,16 @@ footer {
         transition: 2s;
     }
 
+    .bannerXp #tailwind::before {
+        width: 85%;
+        transition: 2s;
+    }
+    
+    .bannerXp #bootstrap::before {
+        width: 80%;
+        transition: 2s;
+    }
+
     .bannerXp #react::before {
         width: 85%;
         transition: 2s;
