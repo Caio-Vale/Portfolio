@@ -202,12 +202,12 @@ header {
 }
 
 .bannerXp:hover #react::before {
-    width: 70%;
+    width: 85%;
     transition: 2s;
 }
 
 .bannerXp:hover #cypress::before {
-    width: 80%;
+    width: 90%;
     transition: 2s;
 }
 
