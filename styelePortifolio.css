@@ -401,12 +401,12 @@ footer {
     }
 
     .bannerXp #react::before {
-        width: 70%;
+        width: 85%;
         transition: 2s;
     }
 
     .bannerXp #cypress::before {
-        width: 80%;
+        width: 90%;
         transition: 2s;
     }
 
