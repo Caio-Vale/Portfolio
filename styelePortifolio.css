@@ -206,6 +206,11 @@ header {
     transition: 2s;
 }
 
+.bannerXp:hover #cypress::before {
+    width: 80%;
+    transition: 2s;
+}
+
 .cursos {
     width: 100%;
     height: 40%;
@@ -396,6 +401,11 @@ footer {
     }
 
     .bannerXp #react::before {
+        width: 5%;
+        transition: 2s;
+    }
+
+    .bannerXp #cypress::before {
         width: 5%;
         transition: 2s;
     }
